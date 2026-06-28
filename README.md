@@ -19,110 +19,218 @@ View your app in AI Studio: https://ai.studio/apps/15ff084c-1c35-47a9-ac4f-483b9
 3. Run the app:
    `npm run dev`
 # 🦸 Community Hero AI
-### AI-Powered Hyperlocal Problem Solver
 
-> Empowering communities with AI-driven civic issue reporting, intelligent categorization, and transparent resolution.
+### *AI-Powered Hyperlocal Problem Solver*
+
+<p align="center">
+
+![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge\&logo=react\&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge\&logo=typescript\&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge\&logo=node.js\&logoColor=white)
+![Google AI Studio](https://img.shields.io/badge/Google%20AI%20Studio-Gemini-4285F4?style=for-the-badge\&logo=google)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge\&logo=vite\&logoColor=white)
+
+</p>
 
 ---
 
-## 📖 Overview
+# 🌍 Overview
 
-Community Hero AI is an AI-powered civic engagement platform that enables citizens to report local infrastructure issues, while helping administrators and volunteers manage, assign, and resolve them efficiently.
+**Community Hero AI** is an intelligent civic issue management platform that empowers communities to report, monitor, and resolve local infrastructure problems efficiently.
 
-Using **Google AI Studio (Gemini)**, the platform automatically analyzes reports, classifies issues, estimates severity, and assists in faster decision-making.
+Citizens can report issues such as potholes, damaged streetlights, garbage accumulation, water leaks, and other public infrastructure concerns. The platform leverages **Google AI Studio (Gemini)** to analyze reports, assist with categorization, and streamline issue management.
 
-This project was developed as a hackathon solution to improve transparency and collaboration between citizens and local authorities.
+---
+
+# 🎯 Problem Statement
+
+Many communities struggle with:
+
+* Delayed issue reporting
+* Lack of transparency
+* Manual categorization
+* Poor communication
+* No centralized tracking system
+
+Community Hero AI addresses these challenges through an AI-assisted workflow and a role-based management system.
 
 ---
 
 # ✨ Key Features
 
-### 👤 Citizen Portal
-
-- Secure user authentication
-- Report civic issues
-- Upload issue images
-- AI-assisted issue categorization
-- Track submitted reports
-- Community-specific issue visibility
-
----
-
-### 🤖 AI-Powered Analysis
-
-Powered by **Google AI Studio (Gemini)**
-
-The AI can:
-
-- Categorize reported issues
-- Generate concise summaries
-- Determine issue priority
-- Recommend appropriate actions
-- Improve reporting accuracy
+| Feature                | Description                                                     |
+| ---------------------- | --------------------------------------------------------------- |
+| 📝 Issue Reporting     | Citizens can submit civic issues with descriptions and images   |
+| 🤖 AI Analysis         | Google Gemini assists with categorizing and summarizing reports |
+| 🗺 Interactive Map     | View issues geographically within the community                 |
+| 👨‍💼 Admin Dashboard  | Manage reports and assign volunteers                            |
+| 👷 Volunteer Dashboard | View assigned tasks and update issue status                     |
+| 📊 Analytics Dashboard | Visualize issue trends and resolution statistics                |
+| 🔐 Role-Based Access   | Separate interfaces for citizens, admins, and volunteers        |
 
 ---
 
-### 🗺 Interactive Community Map
+# 🤖 AI Workflow
 
-- View reported issues on a map
-- Real-time issue visualization
-- Community-based filtering
-- Status tracking
+```mermaid
+flowchart LR
 
----
+A[Citizen Reports Issue]
+-->B[Image & Description]
 
-### 👷 Volunteer Dashboard
+B-->C[Google AI Studio - Gemini]
 
-- View assigned issues only
-- Update issue status
-- Mark issues as resolved
-- Track assigned work
+C-->D[Issue Category]
 
----
+D-->E[Priority Suggestion]
 
-### 👨‍💼 Administrator Dashboard
+E-->F[Administrator Review]
 
-- Monitor all reported issues
-- Assign volunteers
-- View analytics
-- Manage communities
-- Track overall progress
+F-->G[Volunteer Assignment]
+
+G-->H[Issue Resolution]
+
+H-->I[Citizen Updated]
+```
 
 ---
 
-### 📊 Analytics
+# 🏗 System Architecture
 
-- Total Reports
-- Pending Issues
-- Resolved Issues
-- Community Statistics
-- Volunteer Performance
-- Issue Distribution
+```mermaid
+flowchart TD
+
+Citizen --> Frontend
+
+Volunteer --> Frontend
+
+Admin --> Frontend
+
+Frontend --> Backend
+
+Backend --> GoogleAI
+
+Backend --> Database
+
+GoogleAI[Google AI Studio Gemini]
+
+Database[(Project Data)]
+```
 
 ---
 
-# 🛠 Technology Stack
+# 🖥 Application Workflow
+
+```mermaid
+flowchart TD
+
+Login
+
+Login --> Dashboard
+
+Dashboard --> ReportIssue
+
+Dashboard --> CommunityMap
+
+Dashboard --> MyReports
+
+Dashboard --> Analytics
+
+Dashboard --> WorkerDashboard
+
+Dashboard --> AdminDashboard
+
+ReportIssue --> AIAnalysis
+
+AIAnalysis --> Assigned
+
+Assigned --> Resolved
+```
+
+---
+
+# 📸 Application Screenshots
+
+## 🔐 Login
+
+![Login](screenshots/login.png)
+
+---
+
+## 🏠 Citizen Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
+---
+
+## 📝 Report Issue
+
+![Report](screenshots/report.png)
+
+---
+
+## 🗺 Community Map
+
+![Map](screenshots/map.png)
+
+---
+
+## 👨‍💼 Admin Dashboard
+
+![Admin](screenshots/admin.png)
+
+---
+
+## 👷 Volunteer Dashboard
+
+![Volunteer](screenshots/worker.png)
+
+---
+
+## 📊 Analytics Dashboard
+
+![Analytics](screenshots/analytics.png)
+
+---
+
+# 📊 Project Highlights
+
+```text
+✔ AI Assisted Issue Categorization
+
+✔ Interactive Community Map
+
+✔ Real-Time Issue Tracking
+
+✔ Role-Based Access
+
+✔ Analytics Dashboard
+
+✔ Volunteer Assignment
+
+✔ Hyperlocal Community Management
+```
+
+---
+
+# 🛠 Tech Stack
 
 ## Frontend
 
-- React
-- TypeScript
-- Vite
-- CSS
+* React
+* TypeScript
+* Vite
+* CSS
 
 ## Backend
 
-- Node.js
-- TypeScript
+* Node.js
+* TypeScript
 
-## AI
+## Artificial Intelligence
 
-- Google AI Studio
-- Gemini API
-
-## Deployment
-
-- Google Cloud Run
+* Google AI Studio
+* Gemini API
 
 ---
 
@@ -130,56 +238,63 @@ The AI can:
 
 ```
 community-hero-ai/
-│
+
 ├── assets/
+
 ├── data/
+
 ├── src/
+
 │   ├── components/
+
 │   ├── data/
+
 │   ├── App.tsx
+
 │   ├── main.tsx
+
 │   └── types.ts
-│
+
 ├── server.ts
+
 ├── package.json
+
 ├── vite.config.ts
+
 ├── tsconfig.json
+
 └── README.md
 ```
 
 ---
 
-# 🚀 Getting Started
+# 🚀 Installation
 
-## Clone the Repository
+Clone the repository
 
 ```bash
 git clone https://github.com/abhishekdaramoni-spec/community-hero-ai.git
 ```
 
-## Navigate to the Project
+Move into the project directory
 
 ```bash
 cd community-hero-ai
 ```
 
-## Install Dependencies
+Install dependencies
 
 ```bash
 npm install
 ```
 
-## Configure Environment Variables
-
-Create a `.env` file.
+Create a `.env` file
 
 ```env
-GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+GEMINI_API_KEY=YOUR_API_KEY
 ```
 
-> **Note:** Never commit your actual API key to GitHub.
-
-## Run the Development Server
+Run the application
 
 ```bash
 npm run dev
@@ -187,116 +302,50 @@ npm run dev
 
 ---
 
-# 🔄 Workflow
-
-```
-Citizen Reports Issue
-          │
-          ▼
-AI Analyzes Report
-          │
-          ▼
-Issue Categorized
-          │
-          ▼
-Administrator Reviews
-          │
-          ▼
-Volunteer Assigned
-          │
-          ▼
-Issue Resolved
-          │
-          ▼
-Citizen Receives Update
-```
-
----
-
 # 🔒 Security
 
-- Environment variable based API configuration
-- Secure authentication flow
-- Role-based access control
-- Community-level authorization
-- Protected AI API usage
+* Environment variable based API configuration
+* Secure authentication workflow
+* Role-based authorization
+* Community-specific data visibility
+* Protected AI API usage
 
 ---
 
-# 🌍 Use Cases
+# 🌍 Possible Applications
 
-- Smart Cities
-- Municipal Corporations
-- Residential Communities
-- Housing Societies
-- Educational Campuses
-- Rural Development Initiatives
+* Smart Cities
+* Municipal Corporations
+* Residential Communities
+* Educational Campuses
+* Housing Societies
+* Village Development
 
 ---
 
 # 🚀 Future Enhancements
 
-- Mobile Application
-- Push Notifications
-- Voice-Based Reporting
-- Offline Reporting
-- Multi-language Support
-- AI Severity Prediction
-- Government Portal Integration
+* 📱 Mobile Application
+* 🌐 Multi-language Support
+* 🔔 Push Notifications
+* 🎙 Voice-Based Reporting
+* 📍 GPS Location Detection
+* 📷 Improved AI Vision Analysis
+* 📴 Offline Reporting
+* ☁ Cloud Database Integration
 
 ---
 
-# 📸 Screenshots
-
-Add screenshots here.
-
-Example:
-
-```
-screenshots/
-├── login.png
-├── dashboard.png
-├── report.png
-├── map.png
-├── admin.png
-└── analytics.png
-```
-
----
-
-# 🏆 Hackathon Highlights
-
-✅ AI-Powered Civic Issue Reporting
-
-✅ Google AI Studio (Gemini) Integration
-
-✅ Hyperlocal Community Management
-
-✅ Interactive Issue Mapping
-
-✅ Volunteer Assignment System
-
-✅ Real-Time Status Tracking
-
-✅ Analytics Dashboard
-
-✅ Cloud-Ready Deployment
-
----
-
-# 👨‍💻 Author
+# 👨‍💻 Developer
 
 **Abhishek Daramoni**
 
 GitHub:
+
 https://github.com/abhishekdaramoni-spec
 
 ---
 
-# 📄 License
+# ⭐ Support
 
-This project is licensed under the MIT License.
-
----
-
-⭐ If you found this project useful, consider giving it a star!
+If you found this project useful, consider giving it a ⭐ on GitHub.
