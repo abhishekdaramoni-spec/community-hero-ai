@@ -313,19 +313,19 @@ Dashboard --> WorkerDashboard
 
 | Login | Dashboard |
 |--------|-----------|
-| ![](screenshots/login.png) | ![](screenshots/dashboard.png) |
+| ![]("C:\Users\Dell\OneDrive\Pictures\Screenshots\Screenshot 2026-06-28 133746.png") | ![]("C:\Users\Dell\OneDrive\Pictures\Screenshots\Screenshot 2026-06-28 133833.png") |
 
 ---
 
 | Report Issue | Community Map |
 |---------------|---------------|
-| ![](screenshots/report.png) | ![](screenshots/map.png) |
+| ![]("C:\Users\Dell\OneDrive\Pictures\Screenshots\Screenshot 2026-06-28 133930.png") | ![]("C:\Users\Dell\OneDrive\Pictures\Screenshots\Screenshot 2026-06-28 133946.png") |
 
 ---
 
 | Analytics | Worker Dashboard |
 |------------|-----------------|
-| ![](screenshots/analytics.png) | ![](screenshots/worker.png) |
+| ![]("C:\Users\Dell\OneDrive\Pictures\Screenshots\Screenshot 2026-06-28 134012.png") | ![]("C:\Users\Dell\OneDrive\Pictures\Screenshots\Screenshot 2026-06-28 134040.png") |
 
 ---
 # 🛠 Technology Stack
