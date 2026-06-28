@@ -309,25 +309,23 @@ Dashboard --> WorkerDashboard
 
 # 📸 Application Preview
 
-> Replace these placeholders with actual screenshots.
+# 📸 Application Preview
 
 | Login | Dashboard |
 |--------|-----------|
-| ![]("C:\Users\Dell\OneDrive\Pictures\Screenshots\Screenshot 2026-06-28 133746.png") | ![]("C:\Users\Dell\OneDrive\Pictures\Screenshots\Screenshot 2026-06-28 133833.png") |
+| ![](Screenshot%202026-06-28%20133746.png) | ![](Screenshot%202026-06-28%20133833.png) |
 
 ---
 
 | Report Issue | Community Map |
-|---------------|---------------|
-| ![]("C:\Users\Dell\OneDrive\Pictures\Screenshots\Screenshot 2026-06-28 133930.png") | ![]("C:\Users\Dell\OneDrive\Pictures\Screenshots\Screenshot 2026-06-28 133946.png") |
+|--------------|---------------|
+| ![](Screenshot%202026-06-28%20133930.png) | ![](Screenshot%202026-06-28%20133946.png) |
 
 ---
 
 | Analytics | Worker Dashboard |
-|------------|-----------------|
-| ![]("C:\Users\Dell\OneDrive\Pictures\Screenshots\Screenshot 2026-06-28 134012.png") | ![]("C:\Users\Dell\OneDrive\Pictures\Screenshots\Screenshot 2026-06-28 134040.png") |
-
----
+|-----------|------------------|
+| ![](Screenshot%202026-06-28%20134012.png) | ![](Screenshot%202026-06-28%20134040.png) |
 # 🛠 Technology Stack
 
 ## Frontend
