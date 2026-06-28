@@ -1,0 +1,6 @@
+{
+  "name": "Community Hero AI",
+  "description": "AI-powered hyperlocal civic issue reporting platform where users can report and analyze potholes, garbage, water leaks, and other public infrastructure issues.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
